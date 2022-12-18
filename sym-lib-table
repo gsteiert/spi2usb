@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name spi2usb-rescue)(type Legacy)(uri ${KIPRJMOD}/spi2usb-rescue.lib)(options "")(descr ""))
+  (lib (name Custom)(type Legacy)(uri /home/greg/sdcard/hwd_dev/kicad/custom.lib)(options "")(descr ""))
+)

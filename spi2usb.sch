@@ -1,0 +1,149 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0103
+U 1 1 5D486EB8
+P 2800 6100
+F 0 "#PWR0103" H 2800 5850 50  0001 C CNN
+F 1 "GND" H 2805 5927 50  0000 C CNN
+F 2 "" H 2800 6100 50  0001 C CNN
+F 3 "" H 2800 6100 50  0001 C CNN
+	1    2800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5E6A96F0
+P 4000 5100
+F 0 "R1" V 3950 4900 50  0000 C CNN
+F 1 "33" V 3950 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4040 5090 50  0001 C CNN
+F 3 "~" H 4000 5100 50  0001 C CNN
+	1    4000 5100
+	0    1    1    0   
+$EndComp
+Text Label 4550 5200 0    50   ~ 0
+D-
+Text Label 4550 5300 0    50   ~ 0
+D+
+$Comp
+L Device:R_US R2
+U 1 1 63A20355
+P 4000 5300
+F 0 "R2" V 3950 5100 50  0000 C CNN
+F 1 "33" V 3950 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4040 5290 50  0001 C CNN
+F 3 "~" H 4000 5300 50  0001 C CNN
+	1    4000 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 63A23108
+P 4000 5500
+F 0 "R3" V 3950 5300 50  0000 C CNN
+F 1 "1.5K" V 3950 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4040 5490 50  0001 C CNN
+F 3 "~" H 4000 5500 50  0001 C CNN
+	1    4000 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 5300 3850 5300
+Wire Wire Line
+	3600 5500 3850 5500
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 63A27298
+P 4950 5300
+F 0 "J2" H 5000 5525 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 5000 5526 50  0001 C CNN
+F 2 "footprint:HDR_2x03_Dual" H 4950 5300 50  0001 C CNN
+F 3 "~" H 4950 5300 50  0001 C CNN
+	1    4950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5300 4750 5300
+Wire Wire Line
+	4150 5500 5350 5500
+Wire Wire Line
+	5350 5500 5350 5300
+Wire Wire Line
+	5350 5300 5250 5300
+Wire Wire Line
+	5250 5400 5250 6100
+Wire Wire Line
+	5250 4600 5250 5200
+Wire Wire Line
+	4150 5100 4500 5100
+Wire Wire Line
+	4500 5100 4500 5200
+Wire Wire Line
+	4500 5200 4750 5200
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 63A4F7A9
+P 2900 5300
+F 0 "J1" H 2957 5767 50  0000 C CNN
+F 1 "USB_B_Micro" H 2957 5676 50  0000 C CNN
+F 2 "footprint:FCI_10118193-0001LF-shield6" H 3050 5250 50  0001 C CNN
+F 3 "~" H 3050 5250 50  0001 C CNN
+	1    2900 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6100 2900 6100
+Wire Wire Line
+	3600 5300 3600 5500
+Wire Wire Line
+	3200 5300 3600 5300
+Connection ~ 3600 5300
+Wire Wire Line
+	3200 5400 3500 5400
+Wire Wire Line
+	3500 5400 3500 5100
+Wire Wire Line
+	3500 5100 3850 5100
+Wire Wire Line
+	3200 5100 3200 4600
+Wire Wire Line
+	3200 4600 5250 4600
+Wire Wire Line
+	2800 5700 2800 6100
+Connection ~ 2800 6100
+Wire Wire Line
+	2900 5700 2900 6100
+Connection ~ 2900 6100
+Wire Wire Line
+	2900 6100 3400 6100
+$Comp
+L Custom:GS_logo GS1
+U 1 1 63A6FBFE
+P 3400 5800
+F 0 "GS1" H 3550 5600 50  0001 C CNN
+F 1 "GS_logo" H 3400 6050 50  0001 C CNN
+F 2 "footprint:gs_logo_200mil" H 3400 5800 50  0001 C CNN
+F 3 "" H 3400 5800 50  0001 C CNN
+	1    3400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5800 3400 6100
+Connection ~ 3400 6100
+Wire Wire Line
+	3400 6100 5250 6100
+$EndSCHEMATC

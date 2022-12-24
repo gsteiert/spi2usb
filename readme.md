@@ -5,6 +5,18 @@ It adds a micro USB connector by connecting to the SPI connector J11.
 
 ![top side](osh-top.png) ![bottom side](osh-bot.png)
 
+## Connections
+
+|  USB  |  J11  | 10M08E144             |
+| :---: | :---: | :---                  |
+|  D+   |   3   | 70, DIFFIO_TX_RX_B27P |
+|  D-   |   1   | 69, DIFFIO_TX_RX_B27N |
+|  PU   |   4   | 66, DIFFIO_TX_RX_B25N |
+|  GND  |   6   |                       |
+|  VBUS |   2   |                       |
+
+## Schematic
+
 [Schematic](spi2usb-sch.pdf)
 
 ## BOM 
